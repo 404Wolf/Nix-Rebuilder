@@ -23,6 +23,8 @@ echo "Commited all changes in the nix config dir";
 git -C $configDir push;
 echo "Commited and pushed all changes to nix config dir";
 
+sleep(1);
+
 # Pull the latest changes from the nix config dir
 sudo git -C $outputDir pull;
 echo "Pulled latest changes from the nix config dir";

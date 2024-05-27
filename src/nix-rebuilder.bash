@@ -30,4 +30,4 @@ sudo git -C $outputDir pull;
 echo "Pulled latest changes from the nix config dir";
 
 # Rebuild the system
-sudo nixos-rebuild switch;
+sudo nixos-rebuild --flake /etc/nixos switch;

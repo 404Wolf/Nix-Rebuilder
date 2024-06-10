@@ -36,7 +36,7 @@ COMMAND=$1;
 
 # If the command is 'nix', then rebuild the system
 case $COMMAND in
-    "nix")
+    "nixos")
         sudo nixos-rebuild --flake $outputDir switch;
         exit 0;
         ;;

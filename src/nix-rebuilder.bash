@@ -28,6 +28,7 @@ git -C $configDir push;
 echo "Commited and pushed all changes to nix config dir";
 
 # Pull the latest changes from the nix config dir
+sudo git -C $outputDir stash;
 sudo git -C $outputDir pull;
 echo "Pulled latest changes from the nix config dir";
 
